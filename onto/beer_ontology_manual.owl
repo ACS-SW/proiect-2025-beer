@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.org/beer#"
+     xml:base="http://example.org/beer"
+     xmlns:dbpedia="http://dbpedia.org/resource/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+    <owl:Class rdf:about="http://example.org/beer#Beer"/>
+
+    <owl:Class rdf:about="http://example.org/beer#Lager">
+        <rdfs:subClassOf rdf:resource="http://example.org/beer#Beer"/>
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Lager"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/beer#Pilsner">
+        <rdfs:subClassOf rdf:resource="http://example.org/beer#Beer"/>
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Pilsner"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/beer#Stout">
+        <rdfs:subClassOf rdf:resource="http://example.org/beer#Beer"/>
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Stout"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/beer#IPA">
+        <rdfs:subClassOf rdf:resource="http://example.org/beer#Beer"/>
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/India_pale_ale"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/beer#Porter">
+        <rdfs:subClassOf rdf:resource="http://example.org/beer#Beer"/>
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Porter_(beer)"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/beer#WheatBeer">
+        <rdfs:subClassOf rdf:resource="http://example.org/beer#Beer"/>
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Wheat_beer"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/beer#Saison">
+        <rdfs:subClassOf rdf:resource="http://example.org/beer#Beer"/>
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Saison"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/beer#AmberAle">
+        <rdfs:subClassOf rdf:resource="http://example.org/beer#Beer"/>
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Amber_ale"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/beer#BlondeAle">
+        <rdfs:subClassOf rdf:resource="http://example.org/beer#Beer"/>
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Blonde_ale"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/beer#Bock">
+        <rdfs:subClassOf rdf:resource="http://example.org/beer#Beer"/>
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Bock"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/beer#Barleywine">
+        <rdfs:subClassOf rdf:resource="http://example.org/beer#Beer"/>
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Barley_wine"/>
+    </owl:Class>
+
+    <rdf:Description rdf:about="http://example.org/beer#heineken">
+        <rdf:type rdf:resource="http://example.org/beer#Lager"/>
+        <rdfs:label>Heineken</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/beer#guinness">
+        <rdf:type rdf:resource="http://example.org/beer#Stout"/>
+        <rdfs:label>Guinness</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/beer#punkIPA">
+        <rdf:type rdf:resource="http://example.org/beer#IPA"/>
+        <rdfs:label>Punk IPA</rdfs:label>
+    </rdf:Description>
+
+</rdf:RDF>
